@@ -22,5 +22,5 @@ steps:
       rootFolderOrFile: '$(Build.SourcesDirectory)'
       includeRootFolder: false
 
-  - task: PublishBuildArtifacts\@1
+  - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
