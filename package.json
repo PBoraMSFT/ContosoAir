@@ -10,10 +10,8 @@
     "test": "jest --testRegex=.*\\.i?spec\\.js$",
     "all-test:watch": "jest --watch --testRegex=.*\\.i?spec\\.js$"
   },
-  {
-    "jest": {
-      "testResultsProcessor": "./node_modules/jest-junit-reporter"
-    }
+  "jest": {
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
