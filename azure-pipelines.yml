@@ -10,10 +10,10 @@ steps:
       TargetFolder: '$(build.artifactstagingdirectory)/Templates'
 
   - script: |
-    displayName: 'npm install, build and test'
       npm install
       npm run test
       npm install --production
+    displayName: 'npm install, build and test'
 
   - task: ArchiveFiles@2
     displayName: 'Archive $(Build.SourcesDirectory)'
