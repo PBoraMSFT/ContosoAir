@@ -10,7 +10,7 @@ steps:
       TargetFolder: '$(build.artifactstagingdirectory)/Templates'
 
   - script: |
-      npm install
+      npm i -D jest-junit-reporter
       npm run test
       npm install --production
     displayName: 'npm install, build and test'
