@@ -11,15 +11,8 @@ steps:
 
   - script: |
     npm install
-#   npm run test
+    npm run test
 
-#  - task: Npm@1
-#    displayName: 'npm custom'
-#    inputs:
-#      command: custom
-#      verbose: false
-#      customCommand: 'install --production'
-      
   - task: ArchiveFiles@2
     displayName: 'Archive $(Build.SourcesDirectory)'
     inputs:
@@ -28,3 +21,10 @@ steps:
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
+
+#  - task: Npm@1
+#    displayName: 'npm custom'
+#    inputs:
+#      command: custom
+#      verbose: false
+#      customCommand: 'install --production'
