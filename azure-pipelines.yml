@@ -11,7 +11,7 @@ steps:
 
   - script: |
     npm install
-    npm run test
+#   npm run test
 
 #  - task: Npm@1
 #    displayName: 'npm custom'
