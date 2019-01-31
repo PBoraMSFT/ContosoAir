@@ -9,6 +9,11 @@ steps:
       Contents: '*.json'
       TargetFolder: '$(build.artifactstagingdirectory)/Templates'
 
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '^6.9.1'
+    displayName: 'Install Node.js'
+
   - script: |
       npm i -D jest-junit-reporter
       set JEST_JUNIT_OUTPUT=test-result.xml && npm test -w=2
