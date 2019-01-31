@@ -11,7 +11,7 @@ steps:
 
   - script: |
       npm i -D jest-junit-reporter
-      npm run test
+      npm test
       npm install --production
     displayName: 'npm install, build and test'
 
