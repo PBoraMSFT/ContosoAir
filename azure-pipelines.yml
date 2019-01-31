@@ -1,5 +1,5 @@
 pool:  
-  vmImage: 'vs2017-win2016' #'ubuntu-16.04' 
+  vmImage: 'ubuntu-16.04' 
 
 steps:
   - task: CopyFiles@2
@@ -12,7 +12,7 @@ steps:
   - script: |
       npm i -D jest-junit-reporter
       npm test
-      npm install --production
+      #npm install --production
     displayName: 'npm install, build and test'
 
   - task: PublishTestResults@2
