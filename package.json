@@ -7,11 +7,8 @@
     "local:build": "webpack --env.NODE_ENV=development --mode=development",
     "unit-test": "jest",
     "int-test": "jest --testRegex=.*\\.ispec\\.js$",
-    "test": "jest --testRegex=.*\\.i?spec\\.js$ --reporters=jest-junit-reporter",    
+    "test": "jest --testRegex=.*\\.i?spec\\.js$ --reporters=default --reporters=jest-junit-reporter",    
     "all-test:watch": "jest --watch --testRegex=.*\\.i?spec\\.js$"
-  },
-  "jest": {
-    "testResultsProcessor": "./node_modules/jest-junit-reporter"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
