@@ -17,7 +17,7 @@ steps:
   - script: |
       npm i -D jest-junit-reporter
       #set JEST_JUNIT_OUTPUT=test-result.xml && npm test -w=2
-      ls ./node_modules
+      #ls ./node_modules
       npm test
       #npm install --production
     displayName: 'npm install, build and test'
