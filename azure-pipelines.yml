@@ -22,6 +22,10 @@ steps:
       #npm install --production
     displayName: 'npm install, build and test'
 
+  - script: |
+      find $(System.DefaultWorkingDirectory)
+    displayName: 'List files'
+
   - task: PublishTestResults@2
     displayName: 'Publish Test Results'
     condition: succeededOrFailed()
