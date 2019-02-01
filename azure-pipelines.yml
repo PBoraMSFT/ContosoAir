@@ -22,16 +22,11 @@ steps:
       #npm install --production
     displayName: 'npm install, build and test'
 
-  - script: |
-      find $(System.DefaultWorkingDirectory)
-    displayName: 'List files'
-    condition: succeededOrFailed()
-
   - task: PublishTestResults@2
     displayName: 'Publish Test Results'
     condition: succeededOrFailed()
     inputs:
-      testResultsFiles: '$(System.DefaultWorkingDirectory)/test-result.xml'
+      testResultsFiles: '$(System.DefaultWorkingDirectory)/test-report.xml'
 
   - task: ArchiveFiles@2
     displayName: 'Archive $(Build.SourcesDirectory)'
