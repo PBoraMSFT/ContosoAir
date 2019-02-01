@@ -25,6 +25,7 @@ steps:
   - script: |
       find $(System.DefaultWorkingDirectory)
     displayName: 'List files'
+    condition: succeededOrFailed()
 
   - task: PublishTestResults@2
     displayName: 'Publish Test Results'
