@@ -10,7 +10,7 @@ Runs a nodejs server (Express v4.16) that stores customer booked flights in a Co
 
 ## Local Environment Setup
 
-This project uses ES6, and has been tested with nodejs v8.9.4  
+This project uses ES6, and has been tested with nodejs v8.9.4. 
 There is almost no front-end logic. Still, the application uses webpack to compile sass styles and bundle third parties js files. If you want to modify any front logic or style run `npm run local:build`.
 
 In order to launch a local server on port 3000 (can be modified with environment variable PORT) run:
